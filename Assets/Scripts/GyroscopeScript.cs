@@ -2,15 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GyroscopeScript : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+public class GyroscopeScript : MonoBehaviour 
+{
+	void Update()
+	{
+		transform.rotation = Input.gyro.attitude;
 	}
 }
