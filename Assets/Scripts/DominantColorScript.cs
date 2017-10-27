@@ -77,7 +77,7 @@ public class DominantColorScript : MonoBehaviour {
         texture = new WebCamTexture();
         //Renderer renderer = GetComponent<Renderer>();
         //renderer.material.mainTexture = webcamTexture;
-        webcamTexture.Play();
+        texture.Play();
         return 0;
     }
 
