@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class DoubleClicScript : MonoBehaviour
 {
-	int idx;
 	public float delai;
-
-	void Start () 
-	{
-
-	}
 
 	void Update () 
 	{
@@ -23,16 +17,12 @@ public class DoubleClicScript : MonoBehaviour
 					StartCoroutine (MoveCameraForward());
 				}
 			}
-			print (Input.GetTouch(i).tapCount);
 		}
-			
-
 		/*
 		if (Input.GetKeyDown (KeyCode.Space)) 
 		{
 			StartCoroutine (MoveCameraForward());
-		}
-		*/
+		}*/
 	}
 
 	public IEnumerator MoveCameraForward()
