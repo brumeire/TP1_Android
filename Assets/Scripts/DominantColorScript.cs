@@ -16,6 +16,9 @@ public class DominantColorScript : MonoBehaviour {
     private float actualTimer;
 
 
+    public Renderer[] objectsColorChange;
+
+
     // Use this for initialization
     void Start ()
     {
@@ -34,6 +37,11 @@ public class DominantColorScript : MonoBehaviour {
             {
                 actualTimer -= timerAverageColorCheck;
                 averageColor = GetAverageColor();
+
+                foreach(Renderer rend in objectsColorChange)
+                {
+                    rend.material.color = averageColor;
+                }
             }
             
         }
