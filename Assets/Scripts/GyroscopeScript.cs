@@ -1,13 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Camera))]
 public class GyroscopeScript : MonoBehaviour 
 {
+	public float speed = 0.2f;
+	public Text text;
+
 	void Update()
 	{
-		transform.rotation = ConvertRot(Input.gyro.attitude)*GetRotFix();
+		Vector3 input = Input.acceleration;
+		transform.Rotate(input*speed*Time.deltaTime);
+		text.text = Input.acceleration.ToString();
+	}
+
+
+	#region old
+	/*
+	[SerializeField]
+	private float rotationSpeed =0.2f;
+	public Text text;
+
+	void Start()
+	{
+		Input.gyro.enabled = true;
+	}
+
+	void Update()
+	{
+		transform.rotation = ConvertRot(Input.gyro.attitude);
+		text.text = Input.gyro.attitude.ToString();
 	}
 
 	private Quaternion ConvertRot(Quaternion input)
@@ -15,6 +39,7 @@ public class GyroscopeScript : MonoBehaviour
 		return new Quaternion(-input.y, input.x, input.z, -input.w);
 	}
 
+/*
 	private Quaternion GetRotFix()
 	{
     if (Screen.orientation == ScreenOrientation.Portrait)
@@ -28,5 +53,6 @@ public class GyroscopeScript : MonoBehaviour
         return Quaternion.Euler(0, 0, 180);
     return Quaternion.identity;
 	}
-
+*/
+#endregion
 }
