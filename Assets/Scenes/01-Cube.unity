@@ -108,6 +108,64 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &328821345
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4435633611152802, guid: 3b386998548242945b43826e84c9bdb9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435633611152802, guid: 3b386998548242945b43826e84c9bdb9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435633611152802, guid: 3b386998548242945b43826e84c9bdb9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435633611152802, guid: 3b386998548242945b43826e84c9bdb9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435633611152802, guid: 3b386998548242945b43826e84c9bdb9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435633611152802, guid: 3b386998548242945b43826e84c9bdb9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435633611152802, guid: 3b386998548242945b43826e84c9bdb9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435633611152802, guid: 3b386998548242945b43826e84c9bdb9, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3b386998548242945b43826e84c9bdb9, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &423415806 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1086858724147984, guid: 3b386998548242945b43826e84c9bdb9,
+    type: 2}
+  m_PrefabInternal: {fileID: 328821345}
+--- !u!114 &423415807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423415806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d535d41b69883f74ab4661e83b8f883f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &731796127
 GameObject:
   m_ObjectHideFlags: 0
