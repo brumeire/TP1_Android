@@ -2020,7 +2020,7 @@ GameObject:
   - component: {fileID: 764659766}
   - component: {fileID: 764659770}
   m_Layer: 0
-  m_Name: SphereTrigger
+  m_Name: SphereCollider
   m_TagString: Trigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3424,8 +3424,8 @@ GameObject:
   - component: {fileID: 1446581910}
   - component: {fileID: 1446581909}
   - component: {fileID: 1446581908}
-  - component: {fileID: 1446581913}
   - component: {fileID: 1446581914}
+  - component: {fileID: 1446581913}
   - component: {fileID: 1446581915}
   m_Layer: 0
   m_Name: Main Camera
