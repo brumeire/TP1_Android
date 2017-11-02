@@ -22,14 +22,19 @@ public class DominantColorScript : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        StartCoroutine(CamRequest());
+        //StartCoroutine(CamRequest());
         actualTimer = 0;
-	}
+       
+        webcamTexture = new WebCamTexture();
+        webcamTexture.Play();
+
+
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-		if (hasCamAuthorisation)
+		if (!hasCamAuthorisation)
         {
             actualTimer += Time.deltaTime;
 
@@ -41,6 +46,7 @@ public class DominantColorScript : MonoBehaviour {
                 foreach(Renderer rend in objectsColorChange)
                 {
                     rend.material.color = averageColor;
+                    //rend.material.mainTexture = webcamTexture;
                 }
             }
             
@@ -91,6 +97,7 @@ public class DominantColorScript : MonoBehaviour {
     /// </returns>
     private Color GetAverageColor()
     {
+        webcamTexture.Play();
         Color[] colors = webcamTexture.GetPixels();
 
         Color average = new Color();

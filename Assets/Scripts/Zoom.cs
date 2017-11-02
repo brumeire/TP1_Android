@@ -19,7 +19,6 @@ public class Zoom : MonoBehaviour {
 	}
 	
 	void Update () {
-        CheckFingers();
         if (Input.touchCount >= 2)
         {
             firstTouch = Input.GetTouch(0);
@@ -38,12 +37,6 @@ public class Zoom : MonoBehaviour {
 
         }
 	}
-
-    private void CheckFingers()
-    {
-        Debug.Log(Input.GetTouch(0).deltaPosition);
-        Debug.Log(Input.GetTouch(1).deltaPosition);
-    }
 
     private Vector2 GetDistance (Vector2 firstPos, Vector2 secondPos)
     {
